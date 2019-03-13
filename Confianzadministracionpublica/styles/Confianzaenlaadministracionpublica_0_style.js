@@ -6,7 +6,7 @@ var style_Confianzaenlaadministracionpublica_0 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("q2wHide_Algo de ac");
+    var value = feature.get("Algo de acuerdo (%)");
     var labelText = "";
     size = 0;
     var labelFont = "9.75px \'MS Shell Dlg 2\', sans-serif";
