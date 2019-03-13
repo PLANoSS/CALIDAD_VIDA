@@ -1,12 +1,12 @@
 var size = 0;
 var placement = 'point';
 
-var style_Edificaciones_0 = function(feature, resolution){
+var style_Estadodelasedificaciones_0 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
     };
-    var value = feature.get("q2wHide_Algo satis");
+    var value = feature.get("Algo satisfecho (%)");
     var labelText = "";
     size = 0;
     var labelFont = "9.75px \'MS Shell Dlg 2\', sans-serif";
