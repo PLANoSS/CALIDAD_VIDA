@@ -6,7 +6,7 @@ var style_Problemamaspreocupantedesuciudad_0 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("q2wHide_Desempleo");
+    var value = feature.get("Desempleo (%)");
     var labelText = "";
     size = 0;
     var labelFont = "9.75px \'MS Shell Dlg 2\', sans-serif";

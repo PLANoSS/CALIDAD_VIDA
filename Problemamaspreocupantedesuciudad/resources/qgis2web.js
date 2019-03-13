@@ -41,7 +41,7 @@ map.addControl(layerSwitcher);
     });
 
     map.addControl(searchLayer);
-map.getView().fit([-9062644.342494, -624787.550979, -8139437.960510, 27922.664674], map.getSize());
+map.getView().fit([-8931356.502740, -559396.764466, -8460414.789956, 132962.271398], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
