@@ -33,7 +33,7 @@ var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
     var searchLayer = new ol.SearchLayer({
-      layer: lyr_calidaddeaire__0,
+      layer: lyr_calidaddeaire_0,
       colName: 'Canton',
       zoom: 10,
       collapsed: true,

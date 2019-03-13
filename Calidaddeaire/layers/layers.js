@@ -12,29 +12,29 @@ new ol.layer.Tile({
 })
 ]
 });
-var format_calidaddeaire__0 = new ol.format.GeoJSON();
-var features_calidaddeaire__0 = format_calidaddeaire__0.readFeatures(json_calidaddeaire__0, 
+var format_calidaddeaire_0 = new ol.format.GeoJSON();
+var features_calidaddeaire_0 = format_calidaddeaire_0.readFeatures(json_calidaddeaire_0, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_calidaddeaire__0 = new ol.source.Vector({
+var jsonSource_calidaddeaire_0 = new ol.source.Vector({
     attributions: [new ol.Attribution({html: '<a href=""></a>'})],
 });
-jsonSource_calidaddeaire__0.addFeatures(features_calidaddeaire__0);var lyr_calidaddeaire__0 = new ol.layer.Vector({
+jsonSource_calidaddeaire_0.addFeatures(features_calidaddeaire_0);var lyr_calidaddeaire_0 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_calidaddeaire__0, 
-                style: style_calidaddeaire__0,
+                source:jsonSource_calidaddeaire_0, 
+                style: style_calidaddeaire_0,
     title: '<b/>Percepción sobre la calidad del aire:</b><br />El degradado de colores en el mapa indica el porcentaje de <br />personas que están <b/>algo satisfechas</b> con la calidad de aire<br />en su ciudad.<br /><br />\
-    <img src="styles/legend/calidaddeaire__0_0.png" />  0 - 20 <br />\
-    <img src="styles/legend/calidaddeaire__0_1.png" />  20 - 40 <br />\
-    <img src="styles/legend/calidaddeaire__0_2.png" />  40 - 60 <br />\
-    <img src="styles/legend/calidaddeaire__0_3.png" />  60 - 80 <br />\
-    <img src="styles/legend/calidaddeaire__0_4.png" />  80 - 100 <br />'
+    <img src="styles/legend/calidaddeaire_0_0.png" />  0 - 20 <br />\
+    <img src="styles/legend/calidaddeaire_0_1.png" />  20 - 40 <br />\
+    <img src="styles/legend/calidaddeaire_0_2.png" />  40 - 60 <br />\
+    <img src="styles/legend/calidaddeaire_0_3.png" />  60 - 80 <br />\
+    <img src="styles/legend/calidaddeaire_0_4.png" />  80 - 100 <br />'
         });
 
-lyr_calidaddeaire__0.setVisible(true);
-var layersList = [baseLayer,lyr_calidaddeaire__0];
-lyr_calidaddeaire__0.set('fieldAliases', {'Codigo': 'Codigo', 'Canton': 'Canton', 'Provincia': 'Provincia', 'Grafica': 'Grafica', 'Año': 'Año', 'Algo satis': 'Algo satis', });
-lyr_calidaddeaire__0.set('fieldImages', {'Codigo': 'Hidden', 'Canton': 'TextEdit', 'Provincia': 'TextEdit', 'Grafica': 'Photo', 'Año': 'TextEdit', 'Algo satis': 'Hidden', });
-lyr_calidaddeaire__0.set('fieldLabels', {'Canton': 'header label', 'Provincia': 'header label', 'Grafica': 'no label', 'Año': 'header label', });
-lyr_calidaddeaire__0.on('precompose', function(evt) {
+lyr_calidaddeaire_0.setVisible(true);
+var layersList = [baseLayer,lyr_calidaddeaire_0];
+lyr_calidaddeaire_0.set('fieldAliases', {'Codigo': 'Codigo', 'Canton': 'Canton', 'Provincia': 'Provincia', 'Grafica': 'Grafica', 'Año': 'Año', 'Algo satisfecho (%)': 'Algo satisfecho (%)', });
+lyr_calidaddeaire_0.set('fieldImages', {'Codigo': 'Hidden', 'Canton': 'TextEdit', 'Provincia': 'TextEdit', 'Grafica': 'Photo', 'Año': 'TextEdit', 'Algo satisfecho (%)': 'TextEdit', });
+lyr_calidaddeaire_0.set('fieldLabels', {'Canton': 'header label', 'Provincia': 'header label', 'Grafica': 'no label', 'Año': 'header label', 'Algo satisfecho (%)': 'no label', });
+lyr_calidaddeaire_0.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
